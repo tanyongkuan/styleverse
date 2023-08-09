@@ -14,7 +14,7 @@
   >
     <div
       class="w-full h-96 rounded-lg bg-no-repeat bg-cover bg-center"
-      style="background-image: url('~@/public/Container.png')"
+      :style="{ backgroundImage: `url(${containerPath})` }"
     >
       <div
         class="
@@ -119,6 +119,7 @@ import { storeToRefs } from 'pinia';
 import Button from '@components/buttons/Button.vue';
 import Categories from '@components/landing/Categories.vue';
 import { useRouter } from 'vue-router';
+import containerPath from 'src/assets/Container.png';
 
 const productStore = useProductStore();
 const router = useRouter();

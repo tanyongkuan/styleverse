@@ -3,7 +3,7 @@
     <div class="grid grid-cols-2 gap-2">
       <div
         className="flex gap-2 items-center justify-center overflow-hidden h-96 bg-no-repeat bg-cover bg-center"
-        style="background-image: url('~@/public/men.jpeg')"
+        :style="{ backgroundImage: `url(${menPath})` }"
       >
         <Button
           text="Men"
@@ -26,7 +26,7 @@
     </div>
     <div
       className="flex gap-2 items-center justify-center overflow-hidden h-96 bg-no-repeat bg-cover bg-center"
-      style="background-image: url('~@/public/accessories.png')"
+      :style="{ backgroundImage: `url(${accessoriesPath})` }"
     >
       <Button
         text="Jewelry"
@@ -40,6 +40,8 @@
 <script setup lang="ts">
 import Button from '@components/buttons/Button.vue';
 import { useRouter } from 'vue-router';
+import accessoriesPath from 'src/assets/accessories.png';
+import menPath from 'src/assets/men.jpeg';
 
 const router = useRouter();
 </script>
