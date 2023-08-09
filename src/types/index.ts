@@ -36,3 +36,24 @@ export type MenuItemType = {
   //   level?: number;
   children?: Array<MenuItemType>;
 };
+
+export type StripeCartItem = {
+  price_data: {
+    currency: string;
+    product_data: {
+      name: string;
+      description: string;
+      images: string[];
+    };
+    unit_amount: number;
+  };
+  quantity: number;
+};
+
+export type StripePaymentIntent = {
+  payment_method_types: Array<string>;
+  mode: string;
+  success_url: string;
+  cancel_url: string;
+  line_items: Array<StripeCartItem>;
+};

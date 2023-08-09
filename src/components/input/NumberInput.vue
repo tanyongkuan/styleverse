@@ -50,7 +50,7 @@ type NumberInputProps = {
   value: number;
 };
 
-const props = withDefaults(defineProps<NumberInputProps>(), {});
+withDefaults(defineProps<NumberInputProps>(), {});
 
 const emit = defineEmits<{
   (e: 'decrement'): void;

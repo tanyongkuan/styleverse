@@ -70,7 +70,6 @@ import { storeToRefs } from 'pinia';
 import ButtonFloating from '@components/buttons/ButtonFloating.vue';
 import CloseIcon from 'vue-material-design-icons/Close.vue';
 import { usePaymentStore } from '@stores/payment';
-import router from 'src/router';
 
 const cartStore = useCartStore();
 const paymentStore = usePaymentStore();

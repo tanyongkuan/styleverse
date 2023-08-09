@@ -1,5 +1,5 @@
 import { api } from './axios';
-import { Product, ProductCart, TableFilter } from 'src/types';
+import { Product, ProductCart, StripeCartItem, TableFilter } from 'src/types';
 
 export const getProduct = ({ id }: Pick<Product, 'id'>) => {
   return api.get<Product>(`/products/${id}`);
@@ -25,7 +25,7 @@ export const getProductsByCategory = (
 };
 
 export const initStripePayment = (cart: Array<ProductCart>) => {
-  const line_items = cart.map((item) => {
+  const line_items: Array<StripeCartItem> = cart.map((item) => {
     return {
       price_data: {
         currency: 'SGD',
@@ -62,32 +62,32 @@ export const initStripePayment = (cart: Array<ProductCart>) => {
       }
     }
   );
+};
 
-  function buildQuery(data, prefix = '') {
-    // Determine the data type
-    var type = Object.prototype.toString.call(data).slice(8, -1).toLowerCase();
+const buildQuery = (data: Object, prefix = ''): string => {
+  // Determine the data type
+  const type = Object.prototype.toString.call(data).slice(8, -1).toLowerCase();
 
-    // Loop through the object and create the query string
-    return Object.keys(data)
-      .map(function (key, index) {
-        // Cache the value of the item
-        var value = data[key];
+  // Loop through the object and create the query string
+  return Object.keys(data)
+    .map((key, index) => {
+      // Cache the value of the item
+      const value = data[key as keyof Object];
 
-        // Add the correct string if the object item is an array or object
-        if (type === 'array') {
-          key = prefix + '[' + index + ']';
-        } else if (type === 'object') {
-          key = prefix ? prefix + '[' + key + ']' : key;
-        }
+      // Add the correct string if the object item is an array or object
+      if (type === 'array') {
+        key = prefix + '[' + index + ']';
+      } else if (type === 'object') {
+        key = prefix ? prefix + '[' + key + ']' : key;
+      }
 
-        // If the value is an array or object, recursively repeat the process
-        if (typeof value === 'object') {
-          return buildQuery(value, key);
-        }
+      // If the value is an array or object, recursively repeat the process
+      if (typeof value === 'object') {
+        return buildQuery(value, key);
+      }
 
-        // Join into a query string
-        return key + '=' + encodeURIComponent(value);
-      })
-      .join('&');
-  }
+      // Join into a query string
+      return key + '=' + encodeURIComponent(value.toString());
+    })
+    .join('&');
 };
