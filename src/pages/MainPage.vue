@@ -14,7 +14,7 @@
   >
     <div
       class="w-full h-96 rounded-lg bg-no-repeat bg-cover bg-center"
-      style="background-image: url('src/assets/Container.png')"
+      style="background-image: url('/public/Container.png')"
     >
       <div
         class="

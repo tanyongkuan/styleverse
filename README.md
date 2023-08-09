@@ -4,7 +4,7 @@
 
 ## Links
 
-- [Live](https://yk-styleverse.netlify.app/ 'Live View')
+- [Live](https://styleverse.netlify.app/ 'Live View')
 
 - [API]('https://fakestoreapi.com/' 'Fake Store API')
 
@@ -15,7 +15,7 @@
 [![code style: eslint](https://img.shields.io/badge/code_style-eslint-blue)](https://github.com/eslint/eslint)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 <br/><br/>
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6d758f59-15ac-4593-b3c6-1c21d4a25d4f/deploy-status)](https://app.netlify.com/sites/yk-styleverse/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6d758f59-15ac-4593-b3c6-1c21d4a25d4f/deploy-status)](https://app.netlify.com/sites/styleverse/deploys)
 
 <br/><br/>
 
