@@ -77,7 +77,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue';
 import { useProductStore } from '@stores/product';
-import { Product } from '@types/index';
+import { Product } from 'src/types';
 import { storeToRefs } from 'pinia';
 import TheRating from '@components/TheRating.vue';
 import Button from '@components/buttons/Button.vue';

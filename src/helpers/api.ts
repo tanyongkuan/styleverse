@@ -1,5 +1,5 @@
 import { api } from './axios';
-import { Product, ProductCart, TableFilter } from '@types/index';
+import { Product, ProductCart, TableFilter } from 'src/types';
 
 export const getProduct = ({ id }: Pick<Product, 'id'>) => {
   return api.get<Product>(`/products/${id}`);

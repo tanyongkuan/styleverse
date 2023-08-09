@@ -39,7 +39,7 @@ import { useProductStore } from '@stores/product';
 import { storeToRefs } from 'pinia';
 import ProductListItem from '@components/ProductListItem.vue';
 import ButtonDropdown from '@components/buttons/ButtonDropdown.vue';
-import { DropdownItem, Product } from '@types/index';
+import { DropdownItem, Product } from 'src/types';
 import ProductListSkeleton from '@components/skeleton/ProductListSkeleton.vue';
 
 type CategoryPageProps = {

@@ -1,4 +1,4 @@
-import { Product, ProductCart } from '@types/index';
+import { Product, ProductCart } from 'src/types';
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
 

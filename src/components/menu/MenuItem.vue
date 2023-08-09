@@ -36,7 +36,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { MenuItemType } from '@types/index';
+import { MenuItemType } from 'src/types';
 import ButtonFloating from '@components/buttons/ButtonFloating.vue';
 import ChevronDownIcon from 'vue-material-design-icons/ChevronDown.vue';
 import { useRouter } from 'vue-router';

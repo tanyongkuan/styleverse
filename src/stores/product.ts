@@ -1,5 +1,5 @@
 import { getProduct, getProducts, getProductsByCategory } from '@helpers/api';
-import { Product, TableFilter } from '@types/index';
+import { Product, TableFilter } from 'src/types';
 import { AxiosResponse } from 'axios';
 import { defineStore } from 'pinia';
 import { ref } from 'vue';

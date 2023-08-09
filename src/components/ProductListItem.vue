@@ -59,7 +59,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { Product } from '@types/index';
+import { Product } from 'src/types';
 import ButtonIcon from '@components/buttons/ButtonIcon.vue';
 import CartOutlineIcon from 'vue-material-design-icons/CartOutline.vue';
 import StarIcon from 'vue-material-design-icons/Star.vue';

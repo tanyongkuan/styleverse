@@ -37,7 +37,7 @@
 <script setup lang="ts">
 import ChevronDownIcon from 'vue-material-design-icons/ChevronDown.vue';
 import Button from './Button.vue';
-import { DropdownItem } from '@types/index';
+import { DropdownItem } from 'src/types';
 
 type ButtonDropdownProps = {
   options: Array<DropdownItem>;

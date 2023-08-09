@@ -9,7 +9,7 @@
 </template>
 <script setup lang="ts">
 import MenuItem from './MenuItem.vue';
-import { MenuItemType } from '@types/index';
+import { MenuItemType } from 'src/types';
 
 type MenuProps = {
   menuLinks: Array<MenuItemType>;
