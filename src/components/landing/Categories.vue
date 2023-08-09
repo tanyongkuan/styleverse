@@ -3,7 +3,7 @@
     <div class="grid grid-cols-2 gap-2">
       <div
         className="flex gap-2 items-center justify-center overflow-hidden h-96 bg-no-repeat bg-cover bg-center"
-        style="background-image: url('/public/men.jpeg')"
+        style="background-image: url('~@/public/men.jpeg')"
       >
         <Button
           text="Men"
@@ -26,7 +26,7 @@
     </div>
     <div
       className="flex gap-2 items-center justify-center overflow-hidden h-96 bg-no-repeat bg-cover bg-center"
-      style="background-image: url('/public/accessories.png')"
+      style="background-image: url('~@/public/accessories.png')"
     >
       <Button
         text="Jewelry"
