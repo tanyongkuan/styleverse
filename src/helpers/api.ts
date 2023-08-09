@@ -43,8 +43,12 @@ export const initStripePayment = (cart: Array<ProductCart>) => {
   const query = buildQuery({
     payment_method_types: ['card'],
     mode: 'payment',
-    success_url: 'http://my-website.com/success/',
-    cancel_url: 'http://my-website.com/checkout/',
+    success_url: import.meta.env.DEV
+      ? import.meta.env.BASE_URL
+      : 'https://yk-styleverse.netlify.app/',
+    cancel_url: import.meta.env.DEV
+      ? import.meta.env.BASE_URL
+      : 'https://yk-styleverse.netlify.app/',
     line_items
   });
 
@@ -53,16 +57,9 @@ export const initStripePayment = (cart: Array<ProductCart>) => {
     {},
     {
       headers: {
-        Authorization: `Bearer sk_test_51Nd5r6KnHU6RkHWC3tvxAVhtXMNWRI2mo81CKpYWLiZT3sfRTgMT7qgTqhRzSOWXVcTFvtslgT0giTXHzJPuBLP600Z9UMwkzK`,
+        Authorization: `Bearer ${import.meta.env.VITE_STRIPE_API}`,
         'Content-type': 'application/x-www-form-urlencoded'
       }
-      // body: buildQuery({
-      //   payment_method_types: ['card'],
-      //   mode: 'payment',
-      //   success_url: 'http://my-website.com/success/',
-      //   cancel_url: 'http://my-website.com/checkout/',
-      //   line_items
-      // })
     }
   );
 

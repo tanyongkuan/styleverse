@@ -29,10 +29,16 @@
     </div>
     <div class="flex items-center gap-5" v-for="item in cart" key="product.id">
       <img :src="item.image" class="w-20 h-24" alt="" />
-      <div>
+      <div class="flex flex-col">
         <span class="text-lg font-medium">{{ item.title }}</span>
-        <p class="text-neutral-500">{{ item.description.substring(0, 100) }}</p>
-        <div class="text-base lg:text-xl text-black font-semibold">
+        <p class="text-neutral-500">
+          {{
+            item.description.length > 100
+              ? `${item.description.substring(0, 100)}...`
+              : item.description
+          }}
+        </p>
+        <div class="text-base text-black font-semibold pt-4">
           {{ `${item.quantity} x $${item.price}` }}
         </div>
       </div>

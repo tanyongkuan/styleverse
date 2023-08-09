@@ -43,7 +43,7 @@
           >Women</span
         >
         <span class="cursor-pointer" @click="router.push('/category/jewelry')"
-          >Jewellery</span
+          >Jewelry</span
         >
       </div>
       <div class="flex justify-center items-center gap-4">

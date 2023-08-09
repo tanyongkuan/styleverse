@@ -12,7 +12,8 @@
       xl:py-16 xl:gap-y-10 xl:max-w-6xl
     "
   >
-    <div class="flex justify-end w-full">
+    <div class="flex justify-between w-full">
+      <span class="text-2xl font-semibold capitalize">{{ props.name }}</span>
       <ButtonDropdown :options="filterOptions" />
     </div>
     <ProductListSkeleton v-if="loading" />

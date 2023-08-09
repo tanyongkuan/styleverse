@@ -38,7 +38,7 @@ import Button from '@components/buttons/Button.vue';
 import ButtonFloating from '@components/buttons/ButtonFloating.vue';
 import WindowCloseIcon from 'vue-material-design-icons/WindowClose.vue';
 import TheMenu from '@components/menu/TheMenu.vue';
-import { MenuItemType } from '@types';
+import { MenuItemType } from '@types/index';
 
 export type NavigationDrawerInstance = {
   displayDrawer(): void;
