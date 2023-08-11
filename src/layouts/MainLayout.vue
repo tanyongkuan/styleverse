@@ -30,12 +30,11 @@
         >
       </div>
       <div class="lg:flex hidden justify-center items-center gap-10">
-        <img
-          src="/public/Company_Placeholder.png"
-          alt="company_logo"
-          class="cursor-pointer"
+        <span
+          class="text-xl font-bold cursor-pointer"
           @click="() => router.push('/')"
-        />
+          >StyleVerse</span
+        >
         <span class="cursor-pointer" @click="router.push('/category/men')"
           >Men</span
         >

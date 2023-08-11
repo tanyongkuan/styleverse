@@ -6,11 +6,11 @@
 
 - [Live](https://styleverse.netlify.app/ 'Live View')
 
-- [API]('https://fakestoreapi.com/' 'Fake Store API')
+- [API](https://fakestoreapi.com/ 'Fake Store API')
 
 ## Built With
 
-<img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/><img src="https://img.shields.io/badge/typescript%20-%23007ACC.svg?&style=for-the-badge&logo=typescript&logoColor=white"/>
+<img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D"/> <img src="https://img.shields.io/badge/typescript%20-%23007ACC.svg?&style=for-the-badge&logo=typescript&logoColor=white"/>
 <br/><br/>
 [![code style: eslint](https://img.shields.io/badge/code_style-eslint-blue)](https://github.com/eslint/eslint)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
