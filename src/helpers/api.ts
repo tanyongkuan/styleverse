@@ -45,10 +45,10 @@ export const initStripePayment = (cart: Array<ProductCart>) => {
     mode: 'payment',
     success_url: import.meta.env.DEV
       ? import.meta.env.BASE_URL
-      : 'https://yk-styleverse.netlify.app/',
+      : 'https://styleverse.netlify.app/',
     cancel_url: import.meta.env.DEV
       ? import.meta.env.BASE_URL
-      : 'https://yk-styleverse.netlify.app/',
+      : 'https://styleverse.netlify.app/',
     line_items
   });
 
